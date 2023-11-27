@@ -29,9 +29,9 @@ scene.add(cube);
 // Spot Light
 const spotLight = new THREE.SpotLight(undefined, 100, 30, 0.5,1,1);
 spotLight.castShadow = true;
-spotLight.shadow.mapSize.width = 1024; // Improves the shadow
+spotLight.shadow.mapSize.width = 1024; // Improves the shadow quality
 spotLight.shadow.mapSize.height = 1024;
-spotLight.position.set(-2, 10, 10);
+spotLight.position.set(-2, 10, 12);
 scene.add(spotLight);
 
 
@@ -52,7 +52,6 @@ renderer.render(scene,camera);
 // Controls
 const controls = new OrbitControls(camera, canvas);
 
-// To simulate the 3D Environment at every frame
 // To simulate the 3D Environment at every frame
 function animate(){
   controls.update();
