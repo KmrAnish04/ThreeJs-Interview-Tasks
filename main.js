@@ -18,7 +18,7 @@ const planeGeometry = new THREE.PlaneGeometry(10,20, 20, 20);
 const planeMaterial = new THREE.MeshStandardMaterial({map: textureLoader.load(road1), side: THREE.DoubleSide});
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 plane.receiveShadow = true;
-plane.position.set(0, -1.1, 0);
+plane.position.set(0, -1.10, 0);
 scene.add(plane);
 
 // Cube Object
